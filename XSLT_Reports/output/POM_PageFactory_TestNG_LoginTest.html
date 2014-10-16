@@ -1,0 +1,472 @@
+<html xmlns:math="http://exslt.org/math" xmlns:testng="http://testng.org">
+   <head>
+      <title>TestNG Results</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <meta http-equiv="pragma" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="max-age=0"></meta>
+      <meta http-equiv="cache-control" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="no-store"></meta>
+      <LINK rel="stylesheet" href="style.css"></LINK>
+      <script type="text/javascript" src="main.js"></script>
+   </head>
+   <body>
+      <table width="100%" style="font-size: 16px; margin-bottom: 10px;" cellspacing="1">
+         <tr>
+            <td width="100%">
+               Test case
+               
+               <b>LoginTest</b>
+            </td>
+            <td style="background-color: #FFBBBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">1</div>
+            </td>
+            <td style="background-color: lightgreen; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">1</div>
+            </td>
+            <td style="background-color: #FFFFBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">1</div>
+            </td>
+            <td align="center" style="background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">3</div>
+            </td>
+            <td align="center"
+                style="font-weight: bold; background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">33%</div>
+            </td>
+            <td style="background-color: #eaf0f7; padding: 3px 3px 3px 0;" align="center"
+                nowrap="true">22s
+               
+            </td>
+         </tr>
+      </table>
+      <div style="width: 200px;">
+         <label for="groupMethodsCheckBox" style="font-weight: bold; margin: 0;">
+            <input id="groupMethodsCheckBox" type="checkbox" onclick="switchTestMethodsView(this)"></input>
+            Group by class
+            
+         </label>
+         <br></br>
+         <label for="methodsFilter_ALL" style="font-weight: bold; margin: 0;">
+            <input id="methodsFilter_ALL" type="checkbox"
+                   onclick="testMethodsFilterChanged(this, 'ALL')"></input>
+            All
+            
+         </label>
+      </div>
+      <label for="methodsFilter_FAIL" style="margin-left: 20px;">
+         <input id="methodsFilter_FAIL" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'FAIL')"
+                checked=""></input>
+         Failed
+         
+      </label>
+      <label for="methodsFilter_PASS">
+         <input id="methodsFilter_PASS" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'PASS')"
+                checked=""></input>
+         Passed
+         
+      </label>
+      <label for="methodsFilter_SKIP">
+         <input id="methodsFilter_SKIP" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'SKIP')"
+                checked=""></input>
+         Skipped
+         
+      </label>
+      <label for="methodsFilter_CONF">
+         <input id="methodsFilter_CONF" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'CONF')"></input>
+         Config
+         
+      </label>
+      <br></br>
+      <div id="testMethodsByStatus">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="com.qtpselenim.testcases.LoginTest_loginTest_byStatus_failed_FAIL1_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.qtpselenim.testcases.LoginTest_loginTest_byStatus_failed_FAIL1_details')">loginTest({Username=mekonecbsflyid@gmail.com, Data_Flag=N, Password=elements12, Runmode=Y})</a>
+               </td>
+               <td nowrap="true">00:03:18</td>
+               <td nowrap="true" align="right">15s
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('com.qtpselenim.testcases.LoginTest_loginTest_byStatus_failed_FAIL1_exception')">java.lang.AssertionError: 
+                     Could NOT login expected [true] but found [false]
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.qtpselenim.testcases.LoginTest_loginTest_byStatus_failed_FAIL1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>loginTest
+                     </div>
+                     <div>
+                        <b>Signature: </b>loginTest(java.util.Hashtable)[pri:0, instance:com.qtpselenim.testcases.LoginTest@156f8b9]
+                     </div>
+                     <div>
+                        <b>Parameters: </b>
+                        
+                        {Username=mekonecbsflyid@gmail.com, Data_Flag=N, Password=elements12, Runmode=Y}
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time: </b>00:03:18
+                     </div>
+                     <div>
+                        <b>End time: </b>00:03:33
+                     </div>
+                     <div>
+                        <b>Duration: </b>15s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.qtpselenim.testcases.LoginTest_loginTest_byStatus_failed_FAIL1_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">java.lang.AssertionError: Could NOT login expected [true] but found [false]
+                        	at org.testng.Assert.fail(Assert.java:94)
+                        	at org.testng.Assert.failNotEquals(Assert.java:494)
+                        	at org.testng.Assert.assertTrue(Assert.java:42)
+                        	at com.qtpselenim.testcases.LoginTest.loginTest(LoginTest.java:49)
+                        	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+                        	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+                        	at java.lang.reflect.Method.invoke(Unknown Source)
+                        	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+                        	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+                        	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+                        	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+                        	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+                        	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+                        	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+                        	at org.testng.TestRunner.run(TestRunner.java:617)
+                        	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+                        	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+                        	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+                        	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+                        	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+                        	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+                        	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+                        	at org.testng.TestNG.run(TestNG.java:1057)
+                        	at org.testng.TestNG.privateMain(TestNG.java:1364)
+                        	at org.testng.TestNG.main(TestNG.java:1333)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="com.qtpselenim.testcases.LoginTest_loginTest_byStatus_passed_PASS1_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.qtpselenim.testcases.LoginTest_loginTest_byStatus_passed_PASS1_details')">loginTest({Username=mekonecbsflyid@gmail.com, Data_Flag=Y, Password=elements1, Runmode=Y})</a>
+               </td>
+               <td nowrap="true">00:03:33</td>
+               <td nowrap="true" align="right">7s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.qtpselenim.testcases.LoginTest_loginTest_byStatus_passed_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>loginTest
+                     </div>
+                     <div>
+                        <b>Signature: </b>loginTest(java.util.Hashtable)[pri:0, instance:com.qtpselenim.testcases.LoginTest@156f8b9]
+                     </div>
+                     <div>
+                        <b>Parameters: </b>
+                        
+                        {Username=mekonecbsflyid@gmail.com, Data_Flag=Y, Password=elements1, Runmode=Y}
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time: </b>00:03:33
+                     </div>
+                     <div>
+                        <b>End time: </b>00:03:40
+                     </div>
+                     <div>
+                        <b>Duration: </b>7s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.qtpselenim.testcases.LoginTest_findFriend_byStatus_skiped_SKIP1_row"
+                class="testMethodStatusSKIP">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.qtpselenim.testcases.LoginTest_findFriend_byStatus_skiped_SKIP1_details')">findFriend()</a>
+               </td>
+               <td nowrap="true">00:03:40</td>
+               <td nowrap="true" align="right">1 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.qtpselenim.testcases.LoginTest_findFriend_byStatus_skiped_SKIP1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>findFriend
+                     </div>
+                     <div>
+                        <b>Signature: </b>findFriend()[pri:0, instance:com.qtpselenim.testcases.LoginTest@156f8b9]
+                     </div>
+                     <div>
+                        <b>Start time: </b>00:03:40
+                     </div>
+                     <div>
+                        <b>End time: </b>00:03:40
+                     </div>
+                     <div>
+                        <b>Duration: </b>1 ms
+                        
+                     </div>
+                     <div>
+                        <b>Depends on methods:
+                           
+                        </b>
+                        <div>
+                               -
+                           com.qtpselenim.testcases.LoginTest.loginTest
+                        </div>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+      </div>
+      <div id="testMethodsByClass" style="display: none;">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr>
+               <td colspan="4">
+                  <h3 style="display: inline;">com.qtpselenim.testcases.LoginTest</h3>
+               </td>
+            </tr>
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="com.qtpselenim.testcases.LoginTest_loginTest_byClass_FAIL1_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.qtpselenim.testcases.LoginTest_loginTest_byClass_FAIL1_details')">loginTest({Username=mekonecbsflyid@gmail.com, Data_Flag=N, Password=elements12, Runmode=Y})</a>
+               </td>
+               <td nowrap="true">00:03:18</td>
+               <td nowrap="true" align="right">15s
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('com.qtpselenim.testcases.LoginTest_loginTest_byClass_FAIL1_exception')">java.lang.AssertionError: 
+                     Could NOT login expected [true] but found [false]
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.qtpselenim.testcases.LoginTest_loginTest_byClass_FAIL1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>loginTest
+                     </div>
+                     <div>
+                        <b>Signature: </b>loginTest(java.util.Hashtable)[pri:0, instance:com.qtpselenim.testcases.LoginTest@156f8b9]
+                     </div>
+                     <div>
+                        <b>Parameters: </b>
+                        
+                        {Username=mekonecbsflyid@gmail.com, Data_Flag=N, Password=elements12, Runmode=Y}
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time: </b>00:03:18
+                     </div>
+                     <div>
+                        <b>End time: </b>00:03:33
+                     </div>
+                     <div>
+                        <b>Duration: </b>15s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.qtpselenim.testcases.LoginTest_loginTest_byClass_FAIL1_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">java.lang.AssertionError: Could NOT login expected [true] but found [false]
+                        	at org.testng.Assert.fail(Assert.java:94)
+                        	at org.testng.Assert.failNotEquals(Assert.java:494)
+                        	at org.testng.Assert.assertTrue(Assert.java:42)
+                        	at com.qtpselenim.testcases.LoginTest.loginTest(LoginTest.java:49)
+                        	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                        	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+                        	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+                        	at java.lang.reflect.Method.invoke(Unknown Source)
+                        	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+                        	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+                        	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+                        	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+                        	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+                        	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+                        	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+                        	at org.testng.TestRunner.run(TestRunner.java:617)
+                        	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+                        	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+                        	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+                        	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+                        	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+                        	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+                        	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+                        	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+                        	at org.testng.TestNG.run(TestNG.java:1057)
+                        	at org.testng.TestNG.privateMain(TestNG.java:1364)
+                        	at org.testng.TestNG.main(TestNG.java:1333)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="com.qtpselenim.testcases.LoginTest_loginTest_byClass_PASS2_row"
+                class="testMethodStatusPASS">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.qtpselenim.testcases.LoginTest_loginTest_byClass_PASS2_details')">loginTest({Username=mekonecbsflyid@gmail.com, Data_Flag=Y, Password=elements1, Runmode=Y})</a>
+               </td>
+               <td nowrap="true">00:03:33</td>
+               <td nowrap="true" align="right">7s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.qtpselenim.testcases.LoginTest_loginTest_byClass_PASS2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>loginTest
+                     </div>
+                     <div>
+                        <b>Signature: </b>loginTest(java.util.Hashtable)[pri:0, instance:com.qtpselenim.testcases.LoginTest@156f8b9]
+                     </div>
+                     <div>
+                        <b>Parameters: </b>
+                        
+                        {Username=mekonecbsflyid@gmail.com, Data_Flag=Y, Password=elements1, Runmode=Y}
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time: </b>00:03:33
+                     </div>
+                     <div>
+                        <b>End time: </b>00:03:40
+                     </div>
+                     <div>
+                        <b>Duration: </b>7s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.qtpselenim.testcases.LoginTest_findFriend_byClass_SKIP3_row"
+                class="testMethodStatusSKIP">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.qtpselenim.testcases.LoginTest_findFriend_byClass_SKIP3_details')">findFriend()</a>
+               </td>
+               <td nowrap="true">00:03:40</td>
+               <td nowrap="true" align="right">1 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.qtpselenim.testcases.LoginTest_findFriend_byClass_SKIP3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>findFriend
+                     </div>
+                     <div>
+                        <b>Signature: </b>findFriend()[pri:0, instance:com.qtpselenim.testcases.LoginTest@156f8b9]
+                     </div>
+                     <div>
+                        <b>Start time: </b>00:03:40
+                     </div>
+                     <div>
+                        <b>End time: </b>00:03:40
+                     </div>
+                     <div>
+                        <b>Duration: </b>1 ms
+                        
+                     </div>
+                     <div>
+                        <b>Depends on methods:
+                           
+                        </b>
+                        <div>
+                               -
+                           com.qtpselenim.testcases.LoginTest.loginTest
+                        </div>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+         <br></br>
+      </div>
+      <div style="margin-top: 15px; color: gray; text-align: center; font-size: 9px;">
+         Generated with
+         
+         <a href="http://code.google.com/p/testng-xslt/" style="color: #8888aa;"
+            target="_blank">
+            TestNG XSLT
+            
+         </a>
+      </div>
+   </body>
+</html>

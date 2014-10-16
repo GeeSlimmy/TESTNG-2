@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="POM_PageFactory_TestNG">
+<listeners>
+<listener class-name="com.qtpselenium.listener.TestListenerAdapter" />
+</listeners>
+
+<test name="LoginTest">
+  <classes>
+  <class name="com.qtpselenim.testcases.LoginTest"></class>
+  </classes>
+</test>
+
+<test name="UPloadPicTest">
+  <classes>
+  <class name="com.qtpselenim.testcases.UploadPic"></class>
+  </classes>
+</test>
+
+</suite>

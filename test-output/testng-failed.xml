@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [POM_PageFactory_TestNG]">
+  <listeners>
+    <listener class-name="com.qtpselenium.listener.TestListenerAdapter"/>
+  </listeners>
+  <test name="LoginTest(failed)">
+    <classes>
+      <class name="com.qtpselenim.testcases.LoginTest">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="findFriend"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenim.testcases.LoginTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+  <test name="UPloadPicTest(failed)">
+    <classes>
+      <class name="com.qtpselenim.testcases.LoginTest">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenim.testcases.LoginTest -->
+      <class name="com.qtpselenim.testcases.UploadPic">
+        <methods>
+          <include name="UploadPic"/>
+        </methods>
+      </class> <!-- com.qtpselenim.testcases.UploadPic -->
+    </classes>
+  </test> <!-- UPloadPicTest(failed) -->
+</suite> <!-- Failed suite [POM_PageFactory_TestNG] -->
