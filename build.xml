@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE project [
 ]>
-<project name="Facebook POM PageFactory TestNG1" default="usage" basedir=".">
+<project name="Facebook POM PageFactory TestNG2" default="usage" basedir=".">
 
 	
 		<!--  Initialize Properties -->
